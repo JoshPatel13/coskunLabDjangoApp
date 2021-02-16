@@ -5,6 +5,7 @@ from . import views
 urlpatterns = [
     path('get-Users/', views.getUsers, name='get-Users'),
     path('add-User/', views.addUser, name='add-User'),
+    path('soft-delete-User/', views.softDeleteUser, name='soft-delete-User'),
     path('delete-User/', views.deleteUser, name='delete-User'),
     path('update-User/', views.updateUser, name='update-User'),
     path('add-Research/', views.addResearch, name='add-Research'),

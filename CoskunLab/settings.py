@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'labInterface',
     'rest_framework',
     'quickOrder',
     'UserManagement',

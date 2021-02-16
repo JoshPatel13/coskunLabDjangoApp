@@ -29,7 +29,7 @@ def addOrder(request):
 # View Order Table on frontend side
 @api_view(['GET'])
 def getOrders(request):
-    try: 
+    try:
         items = getAllOrderObjects()
         serializer = OrderSerializer(items, many = True)
         return Response(serializer.data, status = status.HTTP_200_OK)

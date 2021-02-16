@@ -6,6 +6,7 @@ from . import message_views
 
 urlpatterns = [
     path('inventory/', inventory_views.getInventory, name = 'inventory'),
+    path('get-item/<str:item_id>/', inventory_views.getInventoryItem, name = 'get-item'),
     path('add-item/', inventory_views.addItem, name = 'add-item'),
     path('update-item/<str:item_id>/', inventory_views.updateItem, name = 'update-item'),
     path('delete-item/<str:item_id>/', inventory_views.deleteItem, name = 'delete-item'),

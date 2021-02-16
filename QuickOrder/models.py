@@ -9,6 +9,7 @@ class InventoryItem(models.Model):
     current_quantity = models.IntegerField()
     min_quantity = models.IntegerField()
     refill_needed = models.BooleanField(default = False)
+    is_deleted = models.BooleanField(default = False)
 
     def __str__(self):
         return self.item_name

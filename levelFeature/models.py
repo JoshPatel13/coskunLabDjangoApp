@@ -12,3 +12,10 @@ class LevelReading(models.Model):
         return self.sr_num
 
 
+class Livestream(models.Model):
+    url = models.URLField()
+
+    def __int__(self):
+        return self.url
+
+
